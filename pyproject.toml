@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "msgflow"
+version = "0.1.0"
+description = ""
+authors = ["MaximSh <baksbanni31@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "3.2.0"
+environs = ">=9.5.0,<9.6.0"
+aio-pika = "9.3.1"
+requests = ">=2.31.0,<2.32.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
