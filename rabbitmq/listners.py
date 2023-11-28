@@ -1,5 +1,3 @@
-import asyncio
-
 import aio_pika
 import logging
 import requests
@@ -33,7 +31,7 @@ async def create_rabbitmq_listener() -> None:
 
 async def print_message(msg: dict) -> None:
     if msg:
-        print(f"{msg['chat_id']}\n{msg['username']}: {msg['message']}")
+        logging.info(f"\n*****{msg['chat_id']}*****\n{msg['username']}: {msg['message']}")
 
 
 async def print_all_messages() -> None:
